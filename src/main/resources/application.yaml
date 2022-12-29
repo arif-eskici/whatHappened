@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+#    generate-unique-name: false
+    url: jdbc:h2:./devdb
+    username: sa
+
+  jpa:
+    properties:
+      javax:
+        persistence:
+          validation:
+            mode: none
+
+    hibernate:
+      ddl-auto: update
+
+whatHappened:
+  upload-path: storage
